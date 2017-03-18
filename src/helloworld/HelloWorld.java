@@ -2,8 +2,6 @@
  * Arquivo: HelloWorld/src/helloworld/HelloWorld.java
  */
 
-package helloworld;
-
 /**
  * Um programa que diz Ola Mundo
  *
@@ -17,8 +15,13 @@ package helloworld;
  * PARA EXECUTAR:
  * java -cp bin helloworld.HelloWorld
  */
+package helloworld;
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Ola, Mundo");
+		if(args.length > 0){
+			System.out.println("Ola, " + args[0]);
+		}else{
+			System.out.println("Ola, Mundo");
+		}
 	}
 }
